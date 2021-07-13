@@ -1,4 +1,3 @@
-import { waitForDomChange } from '@testing-library/react';
 import React, { useState, useEffect } from 'react'
 import { useHistory } from 'react-router-dom'
 import Header from './Header'
@@ -34,7 +33,7 @@ function Login()
     }
     return (
         <div>
-           
+           <Header />
             <h1>Login Page</h1>
             <div className="col-sm-6 offset-sm-3">
             <input type="text" placeholder="email" onChange={(e)=>setEmail(e.target.value)} className="form-control"/>

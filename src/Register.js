@@ -16,6 +16,8 @@ function Register()
     const [password,setPassword]=useState("")
     const [email,setEmail]=useState("")
     const history=useHistory;
+
+    
    async function signUp(){
         let item={name,password,email}
         console.warn(name,password,email)
@@ -35,6 +37,7 @@ function Register()
     }
     return(
         <>
+        <Header />
    
         <div className="col-sm-6 offset-sm-3">
             <h1>Register</h1>
